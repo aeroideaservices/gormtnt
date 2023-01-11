@@ -1,5 +1,5 @@
-github.com/aeroideaservices/tnt v0.0.0-20230110123449-df9a3acd018d h1:7AQVOQkahc9q3Fdm0PjUH4VDip7/Mvwn9FmN2lawZa0=
-github.com/aeroideaservices/tnt v0.0.0-20230110123449-df9a3acd018d/go.mod h1:ATqkvni11QtB851Ecv2PYIfnTLK92HO9zuvIgl8cm1c=
+github.com/aeroideaservices/tnt v0.0.0-20230110174935-df2afd205809 h1:ADjmxA6D1IaLgA0JxqhxHbfqOOwuL4HCivxvJ9DGDpk=
+github.com/aeroideaservices/tnt v0.0.0-20230110174935-df2afd205809/go.mod h1:ATqkvni11QtB851Ecv2PYIfnTLK92HO9zuvIgl8cm1c=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
