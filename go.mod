@@ -3,13 +3,13 @@ module github.com/aeroideaservices/gormtnt
 go 1.19
 
 require (
-	github.com/aeroideaservices/tnt v0.0.0-20230110174935-df2afd205809
+	github.com/aeroideaservices/tnt v0.0.0-20230112080246-312cf118a67f
+	github.com/google/uuid v1.3.0
 	gorm.io/gorm v1.24.2
 )
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/uuid v1.3.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/mattn/go-pointer v0.0.1 // indirect
