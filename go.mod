@@ -3,7 +3,7 @@ module github.com/aeroideaservices/gormtnt
 go 1.18
 
 require (
-	github.com/aeroideaservices/tnt v1.0.0
+	github.com/aeroideaservices/tnt v1.0.3
 	github.com/google/uuid v1.3.0
 	gorm.io/gorm v1.24.3
 )
