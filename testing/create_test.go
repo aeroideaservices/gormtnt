@@ -10,6 +10,10 @@ import (
 func TestCreate(t *testing.T) {
 	db := initDB(t)
 
+	/*
+		тут т.к. во время разработки спешили, то тест проверяем только на ошибки,
+		результат проверяется вручную (комментируем defer teardown() и таблица не удаляется)
+	*/
 	t.Run("basic", func(t *testing.T) {
 		teardown := setupCreate(t, db, &User{})
 		defer teardown()

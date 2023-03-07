@@ -16,6 +16,12 @@ import (
 	"gorm.io/gorm/schema"
 )
 
+/*
+	Тут почти все переписано с других гормовских движков
+	https://github.com/go-gorm/postgres
+	https://github.com/go-gorm/mysql
+*/
+
 type Config struct {
 	DriverName               string
 	ServerVersion            string
@@ -96,6 +102,9 @@ func (dialector Dialector) Migrator(db *gorm.DB) gorm.Migrator {
 }
 
 func (dialector Dialector) DataTypeOf(field *schema.Field) string {
+	// кастомные типы
+	// ID          uuid.UUID  `gorm:"type:uuid"`
+	// AnotherUUID *uuid.UUID `gorm:"type:uuid"`
 	if t, ok := field.TagSettings["type"]; ok {
 		switch t {
 		case "uuid":

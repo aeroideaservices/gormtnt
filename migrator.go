@@ -10,6 +10,10 @@ import (
 	"gorm.io/gorm/schema"
 )
 
+/*
+	Тут тоже большинство как в других драйверах, за небольшим исключением
+*/
+
 type Migrator struct {
 	migrator.Migrator
 }
@@ -38,6 +42,7 @@ func (m Migrator) BuildIndexOptions(opts []schema.IndexOption, stmt *gorm.Statem
 	return
 }
 
+// узнаем существует ли уже такой индекс
 func (m Migrator) HasIndex(value interface{}, name string) bool {
 	var count int64
 	m.RunWithValue(value, func(stmt *gorm.Statement) error {
@@ -91,6 +96,7 @@ func (m Migrator) DropIndex(value interface{}, name string) error {
 	})
 }
 
+// запбираем все таблицы (спейсы)
 func (m Migrator) GetTables() (tableList []string, err error) {
 	return tableList, m.DB.Raw("SELECT \"name\" FROM \"_space\"").Scan(&tableList).Error
 }

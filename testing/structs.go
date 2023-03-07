@@ -20,3 +20,16 @@ type Uuid struct {
 func (Uuid) TableName() string {
 	return "UuidTest"
 }
+
+// `Client` belongs to `Company`, `CompanyID` is the foreign key
+type Client struct {
+	ID        int
+	Name      string
+	CompanyID int
+	Company   Company
+}
+
+type Company struct {
+	ID   int
+	Name string
+}
